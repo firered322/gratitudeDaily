@@ -17,5 +17,18 @@ exports.getPosts = async (req, res) => {
 };
 
 exports.createPost = (req, res) => {
-  res.send("Post creation");
+  const response = {
+    success: 0,
+    data: "",
+  };
+  const post = req.body;
+  const result = postServices.createPost(post);
+  response.success = 1;
+  response.data = result;
+  res.status(201).json(response);
+  try {
+  } catch (error) {
+    response.data = error;
+    res.status(409).json({ message: error.message });
+  }
 };

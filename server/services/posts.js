@@ -9,6 +9,16 @@ const services = {
       return error;
     }
   },
+
+  createPost: async function (postBody) {
+    const newPost = new Posts(postBody);
+    try {
+      const result = await newPost.save();
+      return result;
+    } catch (error) {
+      return error;
+    }
+  },
 };
 
 module.exports = services;
