@@ -6,6 +6,63 @@
   box-sizing: border-box;
 }
 
+/*
+imperial-red: #e63946;
+honeydew: #f1faee;
+powder-blue: #a8dadc;
+celadon-blue: #457b9d;
+prussian-blue: #1d3557;
+ */
+
 html {
   font-family: "Karla", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #1d3557;
+  margin: 0 17%;
+}
+
+header {
+  margin: 0 auto;
+  background-color: #06d6a0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-logo {
+  width: 80px;
+  padding: 0 0.5rem;
+}
+
+.nav-header {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+}
+
+.nav-brand-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem 0 0.5rem 4rem;
+  width: 25%;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.container-posts {
+  flex-grow: 2;
+}
+
+.container-form {
+  flex-grow: 1;
 }
